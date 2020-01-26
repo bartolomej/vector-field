@@ -34,5 +34,9 @@
     "webpack-glob-entry": "^2.1.1",
     "webpack-merge": "^4.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "chroma-js": "latest",
+    "monaco-editor": "^0.19.3",
+    "vect-js": "^1.0.7"
+  }
 }

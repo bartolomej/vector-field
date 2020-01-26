@@ -17,7 +17,7 @@
     <meta property="og:url" content=""/> <!-- where do you want your post to link to -->
     <meta property="og:type" content="article"/>
 
-    <title>Simple front end starter template</title>
+    <title>Vector field</title>
 
     <link rel="icon" href="assets/images/drawing.svg">
     <link rel="stylesheet" href="bundle.js.css">
@@ -25,20 +25,26 @@
 </head>
 <body>
 
-<div>
-    <img src="web-programming.svg"/>
+<div id="controls-container">
     <div>
-        <p>Basic template for modern front end web development.</p>
-        <br>
-        <p>Supporting:</p>
-        <ul>
-            <li>ES6 syntax</li>
-            <li>JS + CSS code bundling</li>
-            <li>Testing</li>
-        </ul>
-        <br>
-        Icons made by <a href="https://www.flaticon.com/authors/icongeek26" title="Icongeek26">Icongeek26</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        <span>VectorX</span>
+        <input id="vectorX" type="text"/>
     </div>
+    <div>
+        <span>VectorY</span>
+        <input id="vectorY" type="text"/>
+    </div>
+    <div>
+        <button id="rerender-btn">RENDER</button>
+    </div>
+</div>
+
+<button id="controls-btn">
+    <img alt="settings" src="gear.svg">
+</button>
+
+<div id="render-container">
+
 </div>
 
 <script src="./bundle.js"></script>

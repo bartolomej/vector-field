@@ -6,23 +6,94 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-body > div {
+.float-in {
+    transform: translateX(0) !important;
+}
+
+#render-container {
     height: 100vh;
+    width: 100vw;
+}
+
+#controls-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    transition: 0.5s all ease-in-out;
+}
+
+#controls-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+#controls-btn:hover {
+    transform: scale(1.1);
+}
+
+#controls-container {
+    width: 400px;
+    position: absolute;
+    left: 0;
+    top: 50px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    color: white;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
 }
 
-body > div > div {
-    text-align: left;
+#controls-container > div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
 }
 
-img {
+#controls-container > div:last-of-type {
+    margin-top: 25px;
     width: 200px;
 }
 
-h1 {
-    color: #FF5770;
+#controls-container button {
+    outline: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: white;
+    cursor: pointer;
+    font-size: 15px;
+    color: black;
+    padding: 6px 10px;
+    font-weight: bold;
 }
 
+#controls-container button:hover {
+    border: 3px solid palevioletred;
+}
+
+#controls-container > div > span {
+    margin-bottom: 4px;
+    font-size: 0.9em;
+    font-weight: bold;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    padding: 0 10px;
+}
+
+#controls-container input[type=text] {
+    font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,monospace;
+    font-size: 0.8em;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    padding: 6px 10px;
+    outline: none;
+}
+
+#controls-container input[type=text]:focus {
+    border: 3px solid palevioletred;
+}
